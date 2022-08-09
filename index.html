@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+    , initial-scale=1.0">
+  <title>AT Fitness</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utils.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="container mx-auto">
+    <header id="home" class="header">
+      <nav class="flex justify-between">
+        <div class="logo font-bold flex items-center">AT Fitness</div>
+        <ul id="sidemenu" class="navbar flex items-center">
+          <a href="#home">
+            <li>Home</li>
+          </a>
+          <a href="#about">
+            <li>About</li>
+          </a>
+          <a href="#services">
+            <li>Services</li>
+          </a>
+          <a href="#prices">
+            <li>Prices</li>
+          </a>
+          <a href="#contact">
+            <li><button class="btn">Contact Us</button></li>
+          </a>
+          <i class="fa fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <hr>
+    </header>
+    <main class="min-h-screen">
+      <div class="slidercontainer">
+        <img class="sliderimage" src="images/sliderimage.jpg">
+        <div class="slidercontent">
+          <h1>Best Gym in the Town</h1><br>
+          <h3>Find everything you need to crush your fitness goals</h3><br>
+          <a href="#contact"><button class="btn">Contact Us</button></a>
+        </div>
+      </div>
+      <div>
+        <h1 id="about" class="text-center">About Us</h1>
+        <div class="line">
+
+        </div>
+      </div>
+      <section class="section1">
+        <div class="flex">
+          <div class="topleft flex flex-col justify-center px-2">
+            <div class="text-center">
+              <img class="dumbbellpng" src="images/dumbbell.png" alt="" srcset="">
+            </div>
+            <h1 class="my-1 text-center">AT Fitness</h1>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum sapiente excepturi
+              ipsum earum. Aspernatur tenetur nobis aliquam, quibusdam inventore magnam placeat dolor corrupti aliquid
+              odio earum amet officiis excepturi provident, repellat quidem libero. Minus, cupiditate error veniam culpa
+              placeat fugit?</p>
+          </div>
+          <div class="topright flex justify-center">
+            <img class="gympng" src="images/gym.png" alt="" srcset="">
+          </div>
+        </div>
+      </section>
+      <div>
+        <h1 id="services" class="text-center">Services</h1>
+        <div class="line">
+
+        </div>
+      </div>
+      <section class="section2">
+        <div class="flex">
+          <div class="topright flex justify-center">
+            <img class="sectionimage1" src="images/sectionimage1.jpg" alt="" srcset="">
+          </div>
+          <div class="topleft flex flex-col px-2">
+            <h2 class="my-1 text-center">Services Provided by Our Gym</h2>
+            <ul class="serviceslist">
+              <li>Nutrition Advice</li>
+              <li>Higher Quality exercise equipment</li>
+              <li>Weight Loss Challenges</li>
+              <li>Stretching Areas</li>
+              <li>Personal training services and many many more.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section3">
+        <h1 id="prices" class="text-center">Pricing</h1>
+        <div class="line">
+
+        </div>
+        <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. At quo, numquam vero quos provident ut
+          sequi
+          harum uga, unde deleniti a assumenda nam reiciendis doloremque ipsam. Quibusdam obcaecati dolorum
+          praesentium!</p>
+        <div class="boxes justify-center">
+          <div class="box">
+            <h2>Standard</h2>
+            <hr>
+            <ul>
+              <li class="highlighted">
+                $30
+              </li>
+              <li>Unlimited access to the gym</li>
+              <li>3 classes per week</li>
+              <li>One Year Membership</li>
+              <li>Free dinking Package</li>
+              <li><button class="btn">Select Plan</button></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2>Premium</h2>
+            <hr>
+            <ul>
+              <li class="highlighted">
+                $40
+              </li>
+              <li>Unlimited access to the gym</li>
+              <li>3 classes per week</li>
+              <li>One Year Membership</li>
+              <li>Free dinking Package</li>
+              <li><button class="btn">Select Plan</button></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2>Ultimate</h2>
+            <hr>
+            <ul>
+              <li class="highlighted">
+                $60
+              </li>
+              <li>Unlimited access to the gym</li>
+              <li>3 classes per week</li>
+              <li>One Year Membership</li>
+              <li>Free dinking Package</li>
+              <li><button class="btn">Select Plan</button></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div>
+        <h1 id="contact" class="text-center">Contact Us</h1>
+        <div class="line">
+
+        </div>
+      </div>
+      <section class="section4">
+        <div class="formcontainer">
+          <form>
+
+            <label for="name">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name..">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      © 2022, AT Fitness. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemeu.style.right = "0";
+    }
+    function closemenu() {
+      sidemeu.style.right = "-200px";
+    }
+
+  </script>
+</body>
+
+</html>

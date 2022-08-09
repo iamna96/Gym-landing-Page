@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Kaushan+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.header {
+    background-color: rgb(106 12 88);
+}
+
+.navbar {
+    padding: 0px 20px;
+    display: flex;
+    height: 70px;
+}
+
+.navbar li {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    list-style: none;
+    margin: 0 12px;
+}
+
+.navbar a:link {
+    text-decoration: none;
+}
+
+.topleft {
+    width: 50%;
+    /* height: 50vh; */
+}
+
+.topright {
+    background-color: #0000004d;
+    width: 50%;
+    /* height: 50vh; */
+}
+
+.section1 {
+    max-height: 100vh;
+    margin-top: -22px;
+    margin-bottom: 31px;
+}
+
+.section1 h1 {
+    color: rgb(106 12 88);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.section2 {
+    margin-top: -28px;
+    margin-bottom: 30px;
+}
+
+.section2 h1 {
+    font-size: 2rem;
+}
+
+.section2 p {
+    text-align: center;
+    padding: 0 130px;
+    margin: 15px 0;
+}
+
+.section3 {
+    margin: 12px 126px;
+    text-align: center;
+}
+
+.logo {
+    padding: 0px 20px;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Bangers', cursive;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.box {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 6px 0;
+    margin: 20px 22px;
+    min-width: 40vh;
+    border-radius: 30px;
+    border: 2px solid rgb(255 0 206 / 30%);
+    text-align: center;
+    background-color: rgb(255 0 206 / 30%);
+}
+
+div.boxes {
+    display: flex;
+}
+
+.box h2 {
+    font-size: 1.3rem;
+    padding: 15px 0;
+}
+
+.highlighted {
+    margin-top: -45px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.box ul {
+    list-style: none;
+}
+
+.box ul li {
+    margin: 12px 2px;
+}
+
+footer {
+    padding: 23px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: rgb(255 255 255);
+    background-color: rgb(185 36 156);
+}
+
+.sectionimage1 {
+    width: 100%;
+    height: 56vh;
+}
+
+.serviceslist {
+    font-size: 20px;
+    padding-top: 80px;
+    padding-left: 120px;
+}
+
+
+/* ---------------------css for small screens------------ */
+
+nav .fa {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .slidercontent {
+        /* padding: 7px; */
+        padding: 0px 7px 10px 1px;
+        background-color: #7c7c7c87;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .slidercontainer h1 {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(37, 1, 34);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .slidercontainer h3 {
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .line {
+        width: 150px;
+        height: 3px;
+        background: rgb(41, 0, 43);
+        margin: 0 auto 80px auto;
+    }
+
+    .gympng {
+        padding-top: 31px;
+        padding-bottom: 11px;
+        height: 358px;
+        width: 186px;
+    }
+
+    div.boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        padding: 6px 0;
+        margin: 20px 0px;
+        min-width: 40vh;
+        border-radius: 30px;
+        border: 2px solid rgb(255 0 206 / 30%);
+        text-align: center;
+        background-color: rgb(255 0 206 / 30%);
+    }
+
+    .navbar {
+        padding: 16px 38px 6px 60px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar li {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+        list-style: none;
+        margin: 30px 6px;
+    }
+
+    nav .fa {
+        margin: 14px 8px;
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+
+    nav ul {
+        background: #115854;
+        /* background: #ff004f; */
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 102px;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .btn {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 15px 22px;
+        border: 2px solid rgb(32, 0, 28);
+        border-radius: 6px;
+        cursor: pointer;
+        color: white;
+        background-color: rgb(185 36 156);
+    }
+
+    .topleft {
+        width: 45%;
+        /* height: 50vh; */
+    }
+
+    .topright {
+        background-color: #0000004d;
+        width: 45%;
+        /* height: 50vh; */
+    }
+
+    .dumbbellpng {
+        display: none;
+    }
+
+    .serviceslist {
+        font-size: 20px;
+        padding-top: 17px;
+        padding-left: 21px;
+    }
+
+    .section3 {
+        margin: 4px 14px;
+        text-align: center;
+    }
+
+
+
+
+}
